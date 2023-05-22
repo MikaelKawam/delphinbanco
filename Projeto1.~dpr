@@ -1,0 +1,17 @@
+program Projeto1;
+
+uses
+  Forms,
+  Projeto in '..\..\Desktop\projeto\banco\banco1\Projeto.pas' {Form1},
+  Transacao in 'Transacao.pas' {Form2},
+  Menu in 'Menu.pas' {Form3};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm3, Form3);
+  Application.Run;
+end.
